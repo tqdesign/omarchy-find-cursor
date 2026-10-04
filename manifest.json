@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "tqdesign.find-cursor",
+  "name": "Find Cursor",
+  "version": "1.0.0",
+  "author": "tqdesign",
+  "license": "MIT",
+  "description": "Rings shrink onto the mouse pointer to show where it is, like Windows' Ctrl locator. Summon with {\"x\":..,\"y\":..} in global logical coordinates.",
+  "kinds": [
+    "overlay"
+  ],
+  "keepLoaded": true,
+  "entryPoints": {
+    "overlay": "Overlay.qml"
+  }
+}

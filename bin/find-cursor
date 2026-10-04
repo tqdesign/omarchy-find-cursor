@@ -1,0 +1,6 @@
+#!/bin/bash
+# Show where the mouse pointer is: rings collapse onto it (tqdesign.find-cursor
+# shell overlay). Bind it to a key, or double-tap Ctrl with hypr/find-cursor.lua.
+
+read -r x y < <(hyprctl cursorpos | tr -d ',')
+omarchy-shell shell summon tqdesign.find-cursor "{\"x\":${x:-0},\"y\":${y:-0}}" >/dev/null
